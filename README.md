@@ -1,10 +1,11 @@
 # Rangr Compass CRM
 
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 ![Platform](https://img.shields.io/badge/Platform-Palantir%20Foundry-blue)
 
-**Author:** Kevin [Your Last Name]
-**Date Completed:** October 16, 2025
+**Author:** Kevin Kevin
+**Project Timeline:** October 3, 2025 - October 16, 2025
+
 
 ---
 
