@@ -55,7 +55,8 @@
 ```
 
 #### Screenshots
-- [x] Screenshot: ![](screenshots/foundry_workspace.png)
+- [x] Screenshot:
+![](screenshots/foundry_workspace.png)
 - [ ] Screenshot: Project folder structure
 
 #### Challenges & Solutions
