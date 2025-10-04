@@ -1,7 +1,7 @@
 # Rangr_Compass_CRM: CRM Project Plan
-**Project:** Build a CRM Solution in Palantir Foundry  
-**Deadline:** Submit by October 16, 2025  
-**Time Available:** 1-2 hours weekdays, 4-6 hours weekends  
+**Project:** Build a CRM Solution in Palantir Foundry
+**Deadline:** Submit by October 16, 2025
+**Time Available:** 1-2 hours weekdays, 4-6 hours weekends
 **Vacation:** October 17-26 (hard constraint)
 
 ---
@@ -33,11 +33,11 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 
 ### Tonight: Friday, October 3 [1-2 hours]
 **Goals:**
-- [ ] Complete "Step 01 - Speedrun: Your first E2E Workflow" course
-- [ ] Write user persona (15 minutes) - create persona.md file
-- [ ] Browse provided company and person datasets
-- [ ] Decide on project name: **ContactHub**
-- [ ] Set up project folder structure in Foundry
+- [ ] Complete "Step 01 - Speedrun: Your first E2E Workflow" course **To Do: 1 hour**
+- [x] Write user persona (15 minutes) - create persona.md file
+- [x] Browse provided company and person datasets
+- [x] Decide on project name: **Rangr Compass CRM**
+- [x] Set up project folder structure in Foundry
 
 **Outcome:** Foundational understanding of Pipeline Builder, Ontology, and Workshop.
 
@@ -407,7 +407,7 @@ Track your actual hours to stay on pace:
 | Oct 15 (Wed) | 1-2 | | | |
 | Oct 16 (Thu) | 1 | | | |
 
-**Total Planned:** 24-38 hours  
+**Total Planned:** 24-38 hours
 **Total Actual:** _____ hours
 
 ---

@@ -45,9 +45,9 @@ To avoid over-engineering, the project scope is defined in tiers. We will not mo
 *The goal of this phase is to build the entire backend data model. By the end of Monday, the "brain" of the application will be complete and ready to be connected to a user interface.*
 
 #### **Tonight (Friday, Oct 3)**
-- [ ] **Task:** Complete the "Step 01 - Speedrun: Your first E2E Workflow" course.
-- [ ] **Task:** Open the provided datasets and familiarize yourself with the columns and data types.
-- [ ] **Task:** Solidify the "Alex" user persona: write down 2-3 specific tasks Alex needs to accomplish.
+- [ ] **Task:** Complete the "Step 01 - Speedrun: Your first E2E Workflow" course. **To Do: 1 hour**
+- [x] **Task:** Open the provided datasets and familiarize yourself with the columns and data types.
+- [x] **Task:** Solidify the "Alex" user persona: write down 2-3 specific tasks Alex needs to accomplish.
 - **Deliverable:** Foundational knowledge of the Foundry workflow.
 
 #### **This Weekend (Saturday, Oct 4 & Sunday, Oct 5)**
