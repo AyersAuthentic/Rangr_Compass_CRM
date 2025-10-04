@@ -52,9 +52,9 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 
 #### Saturday, October 4 [4-6 hours]
 **Goals:**
-- [ ] Ingest company dataset into your project folder
-- [ ] Ingest person dataset into your project folder
-- [ ] Start Pipeline Builder: Create initial transforms
+- [x] Ingest company dataset into your project folder
+- [x] Ingest person dataset into your project folder
+- [x] Start Pipeline Builder: Create initial transforms
   - [ ] Clean company data (standardize column names, fix data types)
   - [ ] Clean person data (standardize column names, fix data types)
   - [ ] Explore data quality issues (nulls, duplicates)

@@ -1,18 +1,18 @@
 # Rangr_Compass_CRM - Project Documentation Journal
 
-**Project:** Customer Relationship Management (CRM) Application  
-**Platform:** Palantir Foundry  
-**Timeline:** October 3-16, 2025  
-**Author:** Kevin  
+**Project:** Customer Relationship Management (CRM) Application
+**Platform:** Palantir Foundry
+**Timeline:** October 3-16, 2025
+**Author:** Kevin
 
 ---
 
 ## 📋 Quick Reference
 
-**Project Name:** ContactHub  
-**User Persona:** Alex, a sales representative who needs to manage customer contacts and interactions  
-**GitHub Repo:** [Add link when created]  
-**Demo Video:** [Add link when uploaded]  
+**Project Name:** Rangr_Compass_CRM
+**User Persona:** Alex, a sales representative who needs to manage customer contacts and interactions
+**GitHub Repo:** ![GitHub](https://github.com/AyersAuthentic/Rangr_Compass_CRM/tree/main)
+**Demo Video:** [To Do]
 
 ---
 
@@ -37,7 +37,7 @@
 ## 📅 Daily Progress Log
 
 ### Friday, October 3, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Foundation & Learning
 
 #### Tasks Completed
@@ -49,38 +49,38 @@
 #### Key Learnings
 ```
 [Add notes about what you learned from the Speedrun course]
-- 
-- 
-- 
+-
+-
+-
 ```
 
 #### Screenshots
-- [ ] Screenshot: Foundry workspace setup
+- [x] Screenshot: ![](screenshots/foundry_workspace.png)
 - [ ] Screenshot: Project folder structure
 
 #### Challenges & Solutions
 ```
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 ```
 
 #### Tomorrow's Focus
 ```
-[What you'll tackle next]
+[Pipeline]
 ```
 
 ---
 
 ### Saturday, October 4, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Data Pipeline - Day 1
 
 #### Tasks Completed
-- [ ] Ingested company dataset
-- [ ] Ingested person dataset
+- [x] Ingested company dataset
+- [x] Ingested person dataset
 - [ ] Started Pipeline Builder transforms
 - [ ] Cleaned company data
 - [ ] Cleaned person data
@@ -89,16 +89,20 @@ Solution:
 #### Pipeline Decisions
 ```
 Dataset: Company
-- Original columns: 
-- Cleaned columns: 
-- Data quality issues found: 
-- Transformations applied: 
+- Original columns:
+- Cleaned columns:
+- Data quality issues found:
+  - nagative revunue found in the revunue column
+  - missing companies found
+  - duplicate company names found
+  - no company id column found
+- Transformations applied:
 
 Dataset: Person
-- Original columns: 
-- Cleaned columns: 
-- Data quality issues found: 
-- Transformations applied: 
+- Original columns:
+- Cleaned columns:
+- Data quality issues found:
+- Transformations applied:
 ```
 
 #### Screenshots
@@ -118,24 +122,24 @@ Dataset: Person
 
 #### Challenges & Solutions
 ```
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 ```
 
 #### Notes for Demo
 ```
 [Things to mention during demo about pipeline decisions]
-- 
-- 
+-
+-
 ```
 
 ---
 
 ### Sunday, October 5, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Data Pipeline - Day 2 & Ontology
 
 #### Tasks Completed
@@ -149,25 +153,25 @@ Solution:
 #### Ontology Design Decisions
 ```
 Company Object
-- Primary Key: 
-- Key Properties: 
-  1. 
-  2. 
-  3. 
-- Why these properties: 
+- Primary Key:
+- Key Properties:
+  1.
+  2.
+  3.
+- Why these properties:
 
 Person Object
-- Primary Key: 
-- Key Properties: 
-  1. 
-  2. 
-  3. 
-- Why these properties: 
+- Primary Key:
+- Key Properties:
+  1.
+  2.
+  3.
+- Why these properties:
 
 Link: Company → Person
-- Link Type: 
-- Relationship: 
-- Why this structure: 
+- Link Type:
+- Relationship:
+- Why this structure:
 ```
 
 #### Screenshots
@@ -180,19 +184,19 @@ Link: Company → Person
 #### Test Queries Run
 ```
 Query 1: [Describe what you tested]
-Result: 
+Result:
 
 Query 2: [Describe what you tested]
-Result: 
+Result:
 ```
 
 #### Challenges & Solutions
 ```
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 ```
 
 #### Critical Checkpoint
@@ -202,14 +206,14 @@ Solution:
 #### Notes for Demo
 ```
 [Ontology design rationale to explain]
-- 
-- 
+-
+-
 ```
 
 ---
 
 ### Monday, October 6, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Workshop UI - Getting Started
 
 #### Tasks Completed
@@ -221,10 +225,10 @@ Solution:
 #### UI Design Decisions
 ```
 Company List View
-- Components used: 
-- Columns displayed: 
-- Sorting/filtering: 
-- Why this layout: 
+- Components used:
+- Columns displayed:
+- Sorting/filtering:
+- Why this layout:
 ```
 
 #### Screenshots
@@ -234,24 +238,24 @@ Company List View
 
 #### Challenges & Solutions
 ```
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 ```
 
 #### Notes for Demo
 ```
 [UI design choices to explain]
-- 
-- 
+-
+-
 ```
 
 ---
 
 ### Tuesday, October 7, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Workshop UI - Navigation
 
 #### Tasks Completed
@@ -263,10 +267,10 @@ Solution:
 #### UI Components Used
 ```
 Company Detail Page
-- Layout structure: 
-- Data display components: 
-- Related people section: 
-- Navigation pattern: 
+- Layout structure:
+- Data display components:
+- Related people section:
+- Navigation pattern:
 ```
 
 #### Screenshots
@@ -277,24 +281,24 @@ Company Detail Page
 
 #### Challenges & Solutions
 ```
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 ```
 
 #### Notes for Demo
 ```
 [Navigation and UX choices to explain]
-- 
-- 
+-
+-
 ```
 
 ---
 
 ### Wednesday, October 8, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Actions - Add Person
 
 #### Tasks Completed
@@ -310,17 +314,17 @@ Action Name: Add New Person
 
 Input Fields:
 - Field 1: [name, type, required/optional]
-- Field 2: 
-- Field 3: 
-- Field 4: 
+- Field 2:
+- Field 3:
+- Field 4:
 
 Validation Rules:
-- 
-- 
+-
+-
 
 Write-back Configuration:
-- Target dataset: 
-- Key mapping: 
+- Target dataset:
+- Key mapping:
 ```
 
 #### Screenshots
@@ -332,28 +336,28 @@ Write-back Configuration:
 #### Test Cases
 ```
 Test 1: [What you tested]
-Result: 
+Result:
 
 Test 2: [What you tested]
-Result: 
+Result:
 
 Test 3: [Edge case tested]
-Result: 
+Result:
 ```
 
 #### Challenges & Solutions
 ```
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 ```
 
 ---
 
 ### Thursday, October 9, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Actions - UI Integration & Checkpoint
 
 #### Tasks Completed
@@ -364,14 +368,14 @@ Solution:
 
 #### Integration Details
 ```
-Button Placement: 
+Button Placement:
 Workflow Steps:
-1. 
-2. 
-3. 
-4. 
+1.
+2.
+3.
+4.
 
-End-to-end test result: 
+End-to-end test result:
 ```
 
 #### Screenshots
@@ -395,17 +399,17 @@ Decision: PROCEED TO STRETCH GOALS / FOCUS ON CORE FIXES
 
 #### Challenges & Solutions
 ```
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 
-Challenge: 
-Solution: 
+Challenge:
+Solution:
 ```
 
 ---
 
 ### Friday, October 10, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Stretch Goals OR Recovery
 
 #### Path Taken: STRETCH GOALS / RECOVERY (circle one)
@@ -421,11 +425,11 @@ Solution:
 Action Name: Log Interaction
 
 Input Fields:
-- 
-- 
-- 
+-
+-
+-
 
-Integration: 
+Integration:
 ```
 
 #### Screenshots
@@ -442,7 +446,7 @@ Integration:
 ---
 
 ### Saturday, October 11, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Polish & Demo Prep
 
 #### Tasks Completed
@@ -456,12 +460,12 @@ Integration:
 #### UI Polish Details
 ```
 Improvements made:
-- 
-- 
-- 
+-
+-
+-
 
 KPI/Dashboard elements (if added):
-- 
+-
 ```
 
 #### Demo Script (Draft 1)
@@ -495,16 +499,16 @@ KPI/Dashboard elements (if added):
 #### Demo Video Notes
 ```
 Video 1 recording notes:
-- What went well: 
-- What needs improvement: 
-- Timing: 
+- What went well:
+- What needs improvement:
+- Timing:
 - Re-record? YES / NO
 ```
 
 ---
 
 ### Sunday, October 12, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Live Edit Practice & Final Demo
 
 #### Live Edit Practice Log
@@ -515,9 +519,9 @@ Scenario: Add "Status" property to Person object
 
 Time taken: ___ minutes
 Steps completed:
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 Challenges encountered:
 
@@ -533,9 +537,9 @@ Scenario: Add industry filter to company list
 
 Time taken: ___ minutes
 Steps completed:
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 Challenges encountered:
 
@@ -551,9 +555,9 @@ Scenario: Add validation to "Add Person" Action
 
 Time taken: ___ minutes
 Steps completed:
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 Challenges encountered:
 
@@ -582,10 +586,10 @@ Key learning:
 #### Final Demo Video
 ```
 Video 2 (Final) recording notes:
-- Timing: 
-- Smoothness: 
-- Narrative clarity: 
-- Technical accuracy: 
+- Timing:
+- Smoothness:
+- Narrative clarity:
+- Technical accuracy:
 - Ready for submission? YES / NO
 ```
 
@@ -597,7 +601,7 @@ Video 2 (Final) recording notes:
 ---
 
 ### Monday, October 13, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Documentation & Q&A Prep
 
 #### Tasks Completed
@@ -674,13 +678,13 @@ Answer:
 ---
 
 ### Tuesday, October 14, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Final Practice
 
 #### Demo Run-Through #___
 ```
-Timing: 
-Smoothness (1-10): 
+Timing:
+Smoothness (1-10):
 Notes:
 
 
@@ -707,7 +711,7 @@ Can I confidently explain:
 ---
 
 ### Wednesday, October 15, 2025
-**Time Spent:** ___ hours  
+**Time Spent:** ___ hours
 **Phase:** Final Review
 
 #### Pre-Submission Checklist
@@ -730,7 +734,7 @@ What I learned:
 What I'd do differently:
 
 
-Confidence level (1-10): 
+Confidence level (1-10):
 ```
 
 ---
@@ -773,54 +777,54 @@ Confidence level (1-10):
 ### Technical Learnings
 ```
 About Pipeline Builder:
-- 
-- 
-- 
+-
+-
+-
 
 About Ontology:
-- 
-- 
-- 
+-
+-
+-
 
 About Workshop:
-- 
-- 
-- 
+-
+-
+-
 
 About Actions:
-- 
-- 
-- 
+-
+-
+-
 ```
 
 ### Design Decisions That Worked
 ```
-1. 
+1.
 
-2. 
+2.
 
-3. 
+3.
 ```
 
 ### Things I'd Do Differently
 ```
-1. 
+1.
 
-2. 
+2.
 
-3. 
+3.
 ```
 
 ### Unexpected Challenges
 ```
-Challenge 1: 
-How I solved it: 
+Challenge 1:
+How I solved it:
 
-Challenge 2: 
-How I solved it: 
+Challenge 2:
+How I solved it:
 
-Challenge 3: 
-How I solved it: 
+Challenge 3:
+How I solved it:
 ```
 
 ---
@@ -844,11 +848,11 @@ How I solved it:
 
 ### Anticipated Live Edit Requests
 ```
-1. Most likely: 
+1. Most likely:
 
-2. Moderately likely: 
+2. Moderately likely:
 
-3. Curveball: 
+3. Curveball:
 ```
 
 ---
@@ -900,23 +904,23 @@ How I solved it:
 
 ### Foundry Documentation Used
 ```
-- 
-- 
-- 
+-
+-
+-
 ```
 
 ### Helpful Tutorials
 ```
-- 
-- 
-- 
+-
+-
+-
 ```
 
 ### External Resources
 ```
-- 
-- 
-- 
+-
+-
+-
 ```
 
 ---
