@@ -58,7 +58,7 @@
 - [x] Screenshot: Workspace
 - [ ] Screenshot: Project folder structure
 
-![alt text](screenshots/foundry_workspace.png)
+![alt text](screenshots/workspace_setup.png)
 
 #### Challenges & Solutions
 ```
