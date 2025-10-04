@@ -1,0 +1,180 @@
+# ContactHub Project - .gitignore
+
+# ===========================================
+# macOS
+# ===========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ===========================================
+# Project Documentation (Work in Progress)
+# ===========================================
+# Keep your working documentation private until ready
+documentation-journal-DRAFT.md
+notes-private.md
+scratch.md
+TODO.md
+
+# ===========================================
+# Screenshots & Media (Raw/Unprocessed)
+# ===========================================
+# Keep raw screenshots out of repo, only commit curated ones
+screenshots-raw/
+screen-recordings-raw/
+*.mov
+*.mp4
+*.avi
+
+# But DO commit your curated images folder
+!images/
+!images/**
+
+# ===========================================
+# Personal Notes & Credentials
+# ===========================================
+# NEVER commit credentials or personal info
+.env
+.env.local
+credentials.txt
+secrets.txt
+passwords.txt
+login-info.md
+
+# Foundry access tokens or API keys
+foundry-token.txt
+api-keys.txt
+
+# ===========================================
+# Text Editor & IDE
+# ===========================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===========================================
+# Temporary Files
+# ===========================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*-backup
+*-old
+
+# ===========================================
+# Archives & Compressed Files (unless needed)
+# ===========================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ===========================================
+# Python (if using any Python scripts)
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# ===========================================
+# Node.js (if using any Node scripts)
+# ===========================================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ===========================================
+# Logs
+# ===========================================
+*.log
+logs/
+*.log.*
+
+# ===========================================
+# Project Specific
+# ===========================================
+# Keep your time tracking private unless you want to share
+time-tracking-personal.md
+
+# Demo practice recordings (keep only final version)
+demo-practice-*.mp4
+demo-draft-*.mp4
+
+# Keep final demo
+!demo-final.mp4
+!contacthub-demo.gif
+
+# ===========================================
+# What TO COMMIT (Explicit Whitelist)
+# ===========================================
+# Make sure these are always included
+!README.md
+!Plan.md
+!Advice.md
+!Documentation.md
+!.gitignore
+
+# Curated screenshots in images folder
+!images/
+!images/*.png
+!images/*.jpg
+!images/*.gif
+
+# Final demo materials
+!demo-final.mp4
+!demo-script.md
+
+# Architecture diagrams or documentation
+!docs/
+!docs/*.md
+!docs
