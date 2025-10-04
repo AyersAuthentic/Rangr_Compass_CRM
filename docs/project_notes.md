@@ -11,7 +11,7 @@
 
 **Project Name:** Rangr_Compass_CRM
 **User Persona:** Alex, a sales representative who needs to manage customer contacts and interactions
-**GitHub Repo:** ![](https://github.com/AyersAuthentic/Rangr_Compass_CRM/tree/main)
+**GitHub Repo:** https://github.com/AyersAuthentic/Rangr_Compass_CRM/tree/main
 **Demo Video:** [To Do]
 
 ---
