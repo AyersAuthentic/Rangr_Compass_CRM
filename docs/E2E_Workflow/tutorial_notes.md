@@ -99,6 +99,8 @@ The entire Foundry workflow is designed to transform raw, disconnected data into
 
 ## Transformation
 
+### Create the Pipeline
+
 
 
 

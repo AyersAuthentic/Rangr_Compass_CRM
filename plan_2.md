@@ -47,6 +47,7 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 - Keep persona.md open during entire project as reference
 
 ---
+## Schedule Slippage
 
 ### Weekend: Saturday & Sunday, October 4-5 [8-12 hours total]
 
@@ -55,9 +56,9 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 - [x] Ingest company dataset into your project folder
 - [x] Ingest person dataset into your project folder
 - [x] Start Pipeline Builder: Create initial transforms
-  - [ ] Clean company data (standardize column names, fix data types)
-  - [ ] Clean person data (standardize column names, fix data types)
-  - [ ] Explore data quality issues (nulls, duplicates)
+  - [x] Clean company data (standardize column names, fix data types)
+  - [x] Clean person data (standardize column names, fix data types)
+  - [x] Explore data quality issues (nulls, duplicates)
 - [ ] Watch Ontology tutorials (30-45 minutes)
 - [ ] Document pipeline with screenshots
 
@@ -71,7 +72,7 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 
 #### Sunday, October 5 [4-6 hours]
 **Goals:**
-- [ ] Complete pipeline: Join company and person datasets
+- [x] Complete pipeline: Join company and person datasets
 - [ ] Open Ontology Manager
 - [ ] Create Company Object
   - [ ] Map to clean company dataset
@@ -84,6 +85,8 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 - [ ] Create Link: Company ↔ Person ("has contacts")
 - [ ] Test ontology queries to verify relationships
 - [ ] Take screenshots of Ontology Manager
+
+## Schedule Slippage
 
 **Ontology Checklist:**
 - Company object must have: name, id, and at least 2-3 other relevant properties
@@ -103,6 +106,8 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 - [ ] Build simplest possible view: Table of all companies
 - [ ] Verify you can see company data in Workshop
 - [ ] Debug any connection issues between Ontology and Workshop
+
+## Schedule Slippage
 
 **Workshop Checklist:**
 - Start with pre-built table component
@@ -126,6 +131,8 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 - [ ] Implement navigation: clicking a company opens detail view
 - [ ] Display company information on detail page
 - [ ] Display related people for that company
+
+## Schedule Slippage
 
 **UI Checklist:**
 - Company list page: table with clickable rows
@@ -423,3 +430,112 @@ Track your actual hours to stay on pace:
 
 ---
 
+# 🏁 Revised Project Plan: Path to the Finish Line
+
+**Current Date:** Wednesday, Oct 8, 8:00 PM
+**Status:** Phase 1 (Data Pipeline) Complete. Foundation is solid.
+**New Goal:** Focus on the **Minimum Viable Product (MVP)** to ensure a successful submission.
+
+---
+
+## 🌙 Tonight: Wednesday, October 8
+
+### Goal: **RECOVER**
+
+- [x] STOP WORKING.
+- [x] Shower and disconnect.
+- [ ] Get a good night's sleep.
+
+---
+
+## 🚀 Phase 2 (Revised): MVP Build (Oct 9 - 10)
+
+### **Thursday, October 9 [1–2 hours]**
+
+**Primary Goal:** Build the Ontology.
+
+- [ ] Open Ontology Manager.
+- [ ] Create the **Company**, **Location**, and **Person** objects using your three clean datasets.
+- [ ] Set the primary keys for each object (`company_id`, `location_id`, `person_id`).
+- [ ] Create the two critical links:
+  - **Many-to-one:** Person → Company (using `company_id`)
+  - **Many-to-one:** Location → Company (using `company_id`)
+- [ ] Test the ontology. Verify that you can see a company and its related people/locations.
+
+**✅ Critical Success Indicator:** By the end of the night, your **data model is live**. If this works, the rest is much easier.
+
+---
+
+### **Friday, October 10 [1–2 hours]**
+
+**Primary Goal:** Build the Core Application Functionality.
+
+- [ ] Create a new **Workshop application**.
+
+#### Task 1: Build the UI
+- [ ] Create a simple table view of all Companies.
+- [ ] Add a second page for **Company Details**.
+- [ ] Implement navigation: clicking a company in the table should open its detail page.
+- [ ] On the detail page, show a table of that company’s related People.
+
+#### Task 2: Build the Action
+- [ ] Create the **“Add New Person”** Action in the Ontology Manager.
+- [ ] Add the **“Add New Person”** button to your Workshop UI.
+- [ ] Test the full loop: Add a person → see them appear in the correct company’s contact list.
+
+**✅ Critical Success Indicator:** By the end of Friday, you have a **working, interactive application** that fulfills all the core requirements of the prompt.
+
+---
+
+## ✨ Phase 3 (Revised): Polish & Demo Prep (Oct 11 - 16)
+
+### **Weekend: Saturday & Sunday, October 11–12 [8–12 hours total]**
+
+**Primary Goal:** Polish the UI and become an expert at your demo.
+
+- [ ] **UI Polish:** Add clear titles, KPI cards (e.g., “Total Companies”), and make the app look clean.
+- [ ] **Write Your Demo Script:** Focus on telling the story of the data cleaning challenges.
+  - Explain why you had to use **“Rank and Filter”** – it’s your most impressive piece of work.
+- [ ] **Practice, Practice, Practice:**
+  - Run through your 5-minute demo multiple times.
+  - Practice the live edit scenarios from your original plan (critical).
+  - Record yourself to check timing and clarity.
+
+---
+
+### **Final Week: Monday–Wednesday, October 13–15**
+
+**Primary Goal:** Finalize documentation and do final rehearsals.
+
+- [ ] Complete your **README** with screenshots and the architecture description.
+- [ ] Prepare confident answers to the likely questions you listed.
+  - Be ready to talk in detail about the **data quality issues you solved**.
+- [ ] One final demo run-through each day.
+
+---
+
+### **Thursday, October 16**
+
+**Goal:** **SUBMIT**
+
+- [ ] Submit your project in the morning.
+- [ ] Begin your vacation. You’ve earned it. 🎉
+
+---
+
+## ⚔️ What to Cut (Be Ruthless)
+
+- ❌ **Log Interaction Action:** This is a stretch goal. Cut it.
+- ❌ **Advanced UI/Filters:** Stick to the core views.
+- ❌ **Title Standardization:** Mention this as a “next step” in the interview, but don’t build it now.
+
+---
+
+### 💡 Final Note
+
+You’ve done **incredible, detailed work**.
+The story of how you **diagnosed and solved data quality issues** is more valuable than any single feature.
+
+This revised plan gets you to the finish line with a **high-quality, impressive project**.
+
+**You’ve got this. 💪**

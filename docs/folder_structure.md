@@ -1,5 +1,3 @@
-Great question! Let me give you the **recommended Foundry project structure** based on best practices and what will make your demo clean and professional.
-
 ## Foundry Project Folder Structure
 
 ```
@@ -123,7 +121,7 @@ Within Pipeline Builder, your transform nodes should follow this flow:
 [Save: company_dataset] [Save: person_dataset]
 ```
 
-## Pro Tips for Foundry Folders
+## Tips for Foundry Folders
 
 ### 1. **Use Descriptive Dataset Names**
 The dataset name will show up in your ontology mapping, so make it clear:
@@ -195,4 +193,3 @@ Use the **simple 3-folder structure** (raw / processed / final) to start. It's:
 
 You can always add more organization later if needed.
 
-**Now PLEASE go to sleep!** 😴 You've prepped enough for tonight. Tomorrow is when the real building begins! 🚀
