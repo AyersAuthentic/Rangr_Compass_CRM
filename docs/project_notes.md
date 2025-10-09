@@ -182,9 +182,6 @@ Dataset: Person
 
 
 #### Challenges & Solutions
-Of course. Having a clear summary of your data cleaning steps is essential for your documentation and demo. Here is a list of the major transformations you performed.
-
----
 
 ## **persons_clean Dataset Transformations**
 
