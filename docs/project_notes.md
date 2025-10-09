@@ -19,7 +19,7 @@
 ## 🎯 Project Goals & Success Criteria
 
 ### Primary Objectives
-- [ ] Build functional data pipeline with company and person datasets
+- [x] Build functional data pipeline with company and person datasets
 - [ ] Create ontology with Company and Person objects
 - [ ] Develop Workshop UI with list and detail views
 - [ ] Implement at least one working Action (Add Person)
@@ -37,14 +37,14 @@
 ## 📅 Daily Progress Log
 
 ### Friday, October 3, 2025
-**Time Spent:** ___ hours
+**Time Spent:** __2_ hours
 **Phase:** Foundation & Learning
 
 #### Tasks Completed
 - [ ] Completed Speedrun course
-- [ ] Created user persona
-- [ ] Reviewed datasets
-- [ ] Set up project folder in Foundry
+- [x] Created user persona
+- [x] Reviewed datasets
+- [x] Set up project folder in Foundry
 
 #### Key Learnings
 ```
@@ -83,53 +83,157 @@ Solution:
 #### Tasks Completed
 - [x] Ingested company dataset
 - [x] Ingested person dataset
-- [ ] Started Pipeline Builder transforms
-- [ ] Cleaned company data
-- [ ] Cleaned person data
+- [x] Started Pipeline Builder transforms
+- [x] Cleaned company data
+- [x] Cleaned person data
 - [ ] Watched Ontology tutorials
 
 #### Pipeline Decisions
-```
+
 Dataset: Company
-- Original columns:
-- Cleaned columns:
-- Data quality issues found:
+## Data quality issues found:
   - nagative revunue found in the revunue column
   - missing companies found
   - duplicate company names found
   - no company id column found
-- Transformations applied:
+  - un parsed name
+  - un parsed phone numbers
+  - un validated phone numbers
+## Transformations applied:
+
+## **persons_clean Dataset Transformations**
+
+### **Deterministic Deduplication**
+**Problem:** The raw data contained both true duplicates and logical duplicates (same person, different jobs), and the standard “Drop duplicates” tool was non-deterministic.
+**Solution:** You implemented a professional **"Rank and Filter"** pattern. You first created a stable row ID (`ingest_order_id`), then used a partitioned Window function to rank duplicates by email, and finally filtered for the #1 rank to get one unique, consistent record per person.
+
+---
+
+### **Complex Name Parsing**
+**Problem:** The single `Name` column contained prefixes (“Dr.”) and suffixes (“DDS”, “Jr.”).
+**Solution:** You implemented a multi-step **“onion” strategy** to first isolate and remove suffixes, then isolate and remove prefixes, creating a clean `core_name` which you then safely split into `first_name` and `last_name`.
+
+---
+
+### **Phone Number Validation and Formatting**
+**Problem:** Phone numbers were in dozens of inconsistent formats, contained invalid data, and had ambiguous country codes.
+**Solution:** You engineered a robust cleaning pipeline that stripped numbers to digits-only, handled leading zeros, validated length, and then reformatted them into two final columns:
+- `phone_display` → human-readable format
+- `validated_phone_uri` → functional format for click-to-call actions
+
+---
+
+### **Key Generation**
+**Solution:**
+- Designated the unique `Email` as the `person_id` (primary key).
+- Created a `company_id` (foreign key) by hashing a cleaned, trimmed version of the company name.
+
+---
+
+## **locations_clean Dataset Transformations**
+
+### **Reliable Key Generation**
+**Problem:** Company names were not unique and could contain inconsistent whitespace.
+**Solution:** You created two critical keys:
+- `location_id` (primary key) by hashing the combination of the company name and address.
+- `company_id` (foreign key) by applying a `TRIM` function to the company name and then hashing it, ensuring consistency.
+
+---
+
+### **Data Integrity Fixes**
+**Problem:** The `Revenue_in_Millions` column contained invalid negative values.
+**Solution:** You used a `CASE` statement to set negative revenue values to `NULL`, ensuring data quality.
+
+---
+
+### **Address Standardization**
+**Problem:** The `Address` column used inconsistent abbreviations.
+**Solution:** You performed a light, safe standardization on common abbreviations (e.g., “St.” → “Street”) to improve readability without altering meaning.
+
 
 Dataset: Person
 - Original columns:
 - Cleaned columns:
 - Data quality issues found:
 - Transformations applied:
-```
+
 
 #### Screenshots
-- [ ] Screenshot: Raw company data
-- [ ] Screenshot: Raw person data
-- [ ] Screenshot: Pipeline Builder - company transform
+- [x] Screenshot: Raw company data
+- [x] Screenshot: Raw person data
+- [x] Screenshot: Pipeline Builder - company transform
 - [ ] Screenshot: Pipeline Builder - person transform
 - [ ] Screenshot: Data quality check results
+### Raw Data
+![raw companies](screenshots/raw_companies.png)
+![raw people](screenshots/raw_people.png)
+### Transformations
+![locations transform](screenshots/locations_transformations.png)
+![company transform](screenshots/company_transformations.png)
+![person transform](screenshots/persons_transformations.png)
+### Clean Data
+![locations clean](screenshots/locations_clean.png)
+![company clean](screenshots/companies_clean.png)
+![person clean](screenshots/persons_clean.png)
+### Pipeline
+![pipeline full](screenshots/pipeline_full.png)
 
-#### Key Code/Transforms
-```python
-# Add any important transform code snippets here
-# Example: Column renaming logic
 
 
-```
 
 #### Challenges & Solutions
-```
-Challenge:
-Solution:
+Of course. Having a clear summary of your data cleaning steps is essential for your documentation and demo. Here is a list of the major transformations you performed.
 
-Challenge:
-Solution:
-```
+---
+
+## **persons_clean Dataset Transformations**
+
+### **Deterministic Deduplication**
+**Problem:** The raw data contained both true duplicates and logical duplicates (same person, different jobs), and the standard “Drop duplicates” tool was non-deterministic.
+**Solution:** You implemented a professional **"Rank and Filter"** pattern. You first created a stable row ID (`ingest_order_id`), then used a partitioned Window function to rank duplicates by email, and finally filtered for the #1 rank to get one unique, consistent record per person.
+
+---
+
+### **Complex Name Parsing**
+**Problem:** The single `Name` column contained prefixes (“Dr.”) and suffixes (“DDS”, “Jr.”).
+**Solution:** You implemented a multi-step **“onion” strategy** to first isolate and remove suffixes, then isolate and remove prefixes, creating a clean `core_name` which you then safely split into `first_name` and `last_name`.
+
+---
+
+### **Phone Number Validation and Formatting**
+**Problem:** Phone numbers were in dozens of inconsistent formats, contained invalid data, and had ambiguous country codes.
+**Solution:** You engineered a robust cleaning pipeline that stripped numbers to digits-only, handled leading zeros, validated length, and then reformatted them into two final columns:
+- `phone_display` → human-readable format
+- `validated_phone_uri` → functional format for click-to-call actions
+
+---
+
+### **Key Generation**
+**Solution:**
+- Designated the unique `Email` as the `person_id` (primary key).
+- Created a `company_id` (foreign key) by hashing a cleaned, trimmed version of the company name.
+
+---
+
+## **locations_clean Dataset Transformations**
+
+### **Reliable Key Generation**
+**Problem:** Company names were not unique and could contain inconsistent whitespace.
+**Solution:** You created two critical keys:
+- `location_id` (primary key) by hashing the combination of the company name and address.
+- `company_id` (foreign key) by applying a `TRIM` function to the company name and then hashing it, ensuring consistency.
+
+---
+
+### **Data Integrity Fixes**
+**Problem:** The `Revenue_in_Millions` column contained invalid negative values.
+**Solution:** You used a `CASE` statement to set negative revenue values to `NULL`, ensuring data quality.
+
+---
+
+### **Address Standardization**
+**Problem:** The `Address` column used inconsistent abbreviations.
+**Solution:** You performed a light, safe standardization on common abbreviations (e.g., “St.” → “Street”) to improve readability without altering meaning.
 
 #### Notes for Demo
 ```
