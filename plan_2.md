@@ -33,7 +33,7 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 
 ### Tonight: Friday, October 3 [1-2 hours]
 **Goals:**
-- [ ] Complete "Step 01 - Speedrun: Your first E2E Workflow" course **To Do: 1 hour**
+- [x] Complete "Step 01 - Speedrun: Your first E2E Workflow" course **To Do: 1 hour**
 - [x] Write user persona (15 minutes) - create persona.md file
 - [x] Browse provided company and person datasets
 - [x] Decide on project name: **Rangr Compass CRM**
@@ -60,7 +60,7 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
   - [x] Clean person data (standardize column names, fix data types)
   - [x] Explore data quality issues (nulls, duplicates)
 - [ ] Watch Ontology tutorials (30-45 minutes)
-- [ ] Document pipeline with screenshots
+- [x] Document pipeline with screenshots
 
 **Pipeline Checklist:**
 - Rename columns to consistent format (e.g., snake_case or camelCase)
@@ -73,16 +73,16 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 #### Sunday, October 5 [4-6 hours]
 **Goals:**
 - [x] Complete pipeline: Join company and person datasets
-- [ ] Open Ontology Manager
-- [ ] Create Company Object
-  - [ ] Map to clean company dataset
-  - [ ] Define key properties (name, industry, status, etc.)
-  - [ ] Set primary key
-- [ ] Create Person Object
-  - [ ] Map to clean person dataset
-  - [ ] Define key properties (name, email, phone, role, etc.)
-  - [ ] Set primary key
-- [ ] Create Link: Company ↔ Person ("has contacts")
+- [x] Open Ontology Manager
+- [x] Create Company Object
+  - [x] Map to clean company dataset
+  - [x] Define key properties (name, industry, status, etc.)
+  - [x] Set primary key
+- [x] Create Person Object
+  - [x] Map to clean person dataset
+  - [x] Define key properties (name, email, phone, role, etc.)
+  - [x] Set primary key
+- [x] Create Link: Company ↔ Person ("has contacts")
 - [ ] Test ontology queries to verify relationships
 - [ ] Take screenshots of Ontology Manager
 
@@ -444,7 +444,7 @@ Track your actual hours to stay on pace:
 
 - [x] STOP WORKING.
 - [x] Shower and disconnect.
-- [ ] Get a good night's sleep.
+- [x] Get a good night's sleep.
 
 ---
 
@@ -454,13 +454,13 @@ Track your actual hours to stay on pace:
 
 **Primary Goal:** Build the Ontology.
 
-- [ ] Open Ontology Manager.
-- [ ] Create the **Company**, **Location**, and **Person** objects using your three clean datasets.
-- [ ] Set the primary keys for each object (`company_id`, `location_id`, `person_id`).
-- [ ] Create the two critical links:
+- [x] Open Ontology Manager.
+- [x] Create the **Company**, **Location**, and **Person** objects using your three clean datasets.
+- [x] Set the primary keys for each object (`company_id`, `location_id`, `person_id`).
+- [x] Create the two critical links:
   - **Many-to-one:** Person → Company (using `company_id`)
   - **Many-to-one:** Location → Company (using `company_id`)
-- [ ] Test the ontology. Verify that you can see a company and its related people/locations.
+- [x] Test the ontology. Verify that you can see a company and its related people/locations.
 
 **✅ Critical Success Indicator:** By the end of the night, your **data model is live**. If this works, the rest is much easier.
 
