@@ -83,7 +83,7 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
   - [x] Define key properties (name, email, phone, role, etc.)
   - [x] Set primary key
 - [x] Create Link: Company ↔ Person ("has contacts")
-- [ ] Test ontology queries to verify relationships
+- [x] Test ontology queries to verify relationships
 - [ ] Take screenshots of Ontology Manager
 
 ## Schedule Slippage
@@ -102,10 +102,10 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 
 ### Monday, October 6 [1-2 hours]
 **Goals:**
-- [ ] Create new Workshop application named "ContactHub"
-- [ ] Build simplest possible view: Table of all companies
-- [ ] Verify you can see company data in Workshop
-- [ ] Debug any connection issues between Ontology and Workshop
+- [x] Create new Workshop application named "ContactHub"
+- [x] Build simplest possible view: Table of all companies
+- [x] Verify you can see company data in Workshop
+- [x] Debug any connection issues between Ontology and Workshop
 
 ## Schedule Slippage
 
@@ -127,9 +127,9 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 
 ### Tuesday, October 7 [1-2 hours]
 **Goals:**
-- [ ] Add company detail page
+- [x] Add company detail page
 - [ ] Implement navigation: clicking a company opens detail view
-- [ ] Display company information on detail page
+- [x] Display company information on detail page
 - [ ] Display related people for that company
 
 ## Schedule Slippage
@@ -145,7 +145,7 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 
 ### Wednesday, October 8 [1-2 hours]
 **Goals:**
-- [ ] Return to Ontology Manager
+- [] Return to Ontology Manager
 - [ ] Create "Add New Person" Action
   - [ ] Define input fields (name, email, phone, role)
   - [ ] Link new person to a company
@@ -470,12 +470,12 @@ Track your actual hours to stay on pace:
 
 **Primary Goal:** Build the Core Application Functionality.
 
-- [ ] Create a new **Workshop application**.
+- [x] Create a new **Workshop application**.
 
 #### Task 1: Build the UI
-- [ ] Create a simple table view of all Companies.
+- [x] Create a simple table view of all Companies.
 - [ ] Add a second page for **Company Details**.
-- [ ] Implement navigation: clicking a company in the table should open its detail page.
+- [x] Implement navigation: clicking a company in the table should open its detail page.
 - [ ] On the detail page, show a table of that company’s related People.
 
 #### Task 2: Build the Action
@@ -530,12 +530,3 @@ Track your actual hours to stay on pace:
 - ❌ **Title Standardization:** Mention this as a “next step” in the interview, but don’t build it now.
 
 ---
-
-### 💡 Final Note
-
-You’ve done **incredible, detailed work**.
-The story of how you **diagnosed and solved data quality issues** is more valuable than any single feature.
-
-This revised plan gets you to the finish line with a **high-quality, impressive project**.
-
-**You’ve got this. 💪**
