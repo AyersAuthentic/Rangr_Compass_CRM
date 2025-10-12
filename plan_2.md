@@ -128,9 +128,9 @@ Build **Rangr Contact CRM**, a functional CRM application in Palantir Foundry th
 ### Tuesday, October 7 [1-2 hours]
 **Goals:**
 - [x] Add company detail page
-- [ ] Implement navigation: clicking a company opens detail view
+- [x] Implement navigation: clicking a company opens detail view
 - [x] Display company information on detail page
-- [ ] Display related people for that company
+- [x] Display related people for that company
 
 ## Schedule Slippage
 
@@ -474,7 +474,7 @@ Track your actual hours to stay on pace:
 
 #### Task 1: Build the UI
 - [x] Create a simple table view of all Companies.
-- [ ] Add a second page for **Company Details**.
+- [x] Add a second page for **Company Details**.
 - [x] Implement navigation: clicking a company in the table should open its detail page.
 - [ ] On the detail page, show a table of that company’s related People.
 
